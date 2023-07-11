@@ -4,6 +4,6 @@ VOLUME /tmp
 
 COPY . .
 
-RUN ./mvn clean compile
+RUN ./mvnw clean compile
 
 ENTRYPOINT ["java","-jar","/app.jar"]
