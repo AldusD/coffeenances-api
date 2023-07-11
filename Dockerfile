@@ -4,6 +4,6 @@ VOLUME /tmp
 
 COPY . .
 
-RUN ./mvnw clean compile
+RUN ./mvnw clean package
 
-ENTRYPOINT ["java","-jar","/app.jar"]
+ENTRYPOINT ["java","-jar","target/coffeenances-api-0.0.1-SNAPSHOT.jar"]
